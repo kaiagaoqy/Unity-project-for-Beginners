@@ -7,7 +7,7 @@ In the top menu, select Window -> PackageManager -> search for input system to i
 Click 'yes' and 'save' in the warning dialogue during the installing process.
 
 For windows, no longer need to reset the building settings!
-![[InstallInputSystem.png]]
+![InstallInputSystem.png](InstallInputSystem.png)
 
 
 After automatic restarting of the project, adding the 'Player Input' component to the sphere
@@ -31,7 +31,8 @@ Important: The following steps are not shown in the video.
 
 5. In the Project window, locate this new InputActions asset in the folder you just created.
 
-6. Either drag the InputActions asset from the Project window to the Actions property of the Player Input component on the Player GameObject, or use the circle icon for the Actions property to select the InputActions asset. **(No longer need for version 2021.3.18f)**
+1. Either drag the InputActions asset from the Project window to the Actions property of the Player Input component on the Player GameObject, or use the circle icon for the Actions property to select the InputActions asset. **(No longer need for version 2021.3.18f)**
+2. 
 ## 3. C/# Start!! Let the sphere move!
 To create a C/# script for the sphere, we can add a compent called "New Script". Let's name it as "PlayerController"
 The script will always be created at the top level folder of our projects. 
@@ -39,7 +40,7 @@ So to let our documents organized and tidy, we will create a new "Scripts" folde
 
 As you can see in the screeshot below, we can move the sphere using WASD and Up/Down/Left/Right arrow
 
-![[InputActionsSetting.png]]
+![InputActionsSetting.png](InputActionsSetting.png)
 
 Then let's work on the scripts
 - Function `Start` will be called once the project is run

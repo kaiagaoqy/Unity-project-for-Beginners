@@ -5,24 +5,24 @@ To create an interactive game or project. We need to select a URP template for r
 The newest 3.4.1 Unity Hub splits the original URP template into 2D and 3D templates. To realize a mobile 3D interactive rendering as the official tutorial shows, please select the 3D(URP), from my hindsight....
 ```
 
-![[img/OriginalPage.png]]
+![originalPage](img/OriginalPage.png)
 
 ## 2. Create a new Scene
 Now you can see the original scene as beblow. **Hierachy** on the left shows objects we have on the scene. We will set up our own objects later. And layput setting ( on the top right) of current page is set as Default, you can change it to whatever kind you like.
-![[img/DefaultScene.png]]
+![img/DefaultScene.png](img/DefaultScene.png)
 - Select `File` on the top left -> `New Scene` to create a new **Basic(URP)** scene, and save it named as MiniGame in your `Assets` folder. For this project, we need no volume, so basic scene will be good enough
 ``` ad-info
 Keep in mind to save your scene first before coding using C# and run the script.
 ```
 
 
-![[img/BasicScene.png]]
+![img/BasicScene.png](img/BasicScene.png)
 
 ## 3. Primitive Plane
 Now we will create a plane, where other players can move on. Now we use the Primitive plane that is bundled with Unity.
 Select GameObject->3D Object -> Plane to create a primitive plane, and rename it as ground.
 
-![[CreatePrimitivePlane.png]]
+![CreatePrimitivePlane.png](CreatePrimitivePlane.png)
 
 ``` ad-info
 Press F to see the entile GameObject
@@ -30,7 +30,7 @@ Press F to see the entile GameObject
 We can use the grid setting at the top of the scene view (defaut shows the plane on the Y axis) to change the grid lines and their opacity ( grid lines are where the arrow points at)
 The property of current object can be manually adjusted on the `Inspector` board or in the C# scripts (talk later)
 
-![[img/GridSetting.png]]
+![img/GridSetting.png](img/GridSetting.png)
 
 To rescale the scale, we can
 1. select the rescale icon on the scene view (or press the hotkey R) then drag the handle of each fields
@@ -41,7 +41,7 @@ The primitive plane is a single sided object, which means if you set y to a nega
 
 Now. let's set x,z=2, y =1
 
-![[AddPlayers.png]]
+![AddPlayers.png](AddPlayers.png)
 
 In the same way, let's create a sphere object then name it as Player.
 
@@ -56,4 +56,4 @@ If we wanna us objects to display different texture, color, opacity,etc, we will
 First, create a folder in the Project view under the Assets folder and name it "Materials"
 Then create a material by right clicking in the project view.
 After setting the materials for your target object, drag the material file on to your target object in the scene window or its title shown in the Hierarchy on the left.
-![[AddMaterials.png]]
+![AddMaterials.png](AddMaterials.png)

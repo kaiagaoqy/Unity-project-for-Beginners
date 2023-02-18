@@ -41,4 +41,4 @@ We set a public variable `player` in the script to let us manully give value to 
 
 Drag the `player` slot in the `hierarchy` to the `Player` field in the `inspector`.
 Now if we run the project, the camera will follow the spheres movements but not rotation.
-![ReferenceToCamera.png](ReferenceToCamera.png)
+![ReferenceToCamera.png](img/ReferenceToCamera.png)

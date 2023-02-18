@@ -40,7 +40,7 @@ So to let our documents organized and tidy, we will create a new "Scripts" folde
 
 As you can see in the screeshot below, we can move the sphere using WASD and Up/Down/Left/Right arrow
 
-![InputActionsSetting.png](InputActionsSetting.png)
+![InputActionsSetting.png](img/InputActionsSetting.png)
 
 Then let's work on the scripts
 - Function `Start` will be called once the project is run

@@ -9,7 +9,7 @@ The newest 3.4.1 Unity Hub splits the original URP template into 2D and 3D templ
 
 ## 2. Create a new Scene
 Now you can see the original scene as beblow. **Hierachy** on the left shows objects we have on the scene. We will set up our own objects later. And layput setting ( on the top right) of current page is set as Default, you can change it to whatever kind you like.
-![img/DefaultScene.png](img/DefaultScene.png)
+![DefaultScene.png](img/DefaultScene.png)
 - Select `File` on the top left -> `New Scene` to create a new **Basic(URP)** scene, and save it named as MiniGame in your `Assets` folder. For this project, we need no volume, so basic scene will be good enough
 ``` ad-info
 Keep in mind to save your scene first before coding using C# and run the script.
@@ -22,7 +22,7 @@ Keep in mind to save your scene first before coding using C# and run the script.
 Now we will create a plane, where other players can move on. Now we use the Primitive plane that is bundled with Unity.
 Select GameObject->3D Object -> Plane to create a primitive plane, and rename it as ground.
 
-![CreatePrimitivePlane.png](CreatePrimitivePlane.png)
+![CreatePrimitivePlane.png](img/CreatePrimitivePlane.png)
 
 ``` ad-info
 Press F to see the entile GameObject
@@ -41,7 +41,7 @@ The primitive plane is a single sided object, which means if you set y to a nega
 
 Now. let's set x,z=2, y =1
 
-![AddPlayers.png](AddPlayers.png)
+![AddPlayers.png](img/AddPlayers.png)
 
 In the same way, let's create a sphere object then name it as Player.
 
@@ -56,4 +56,4 @@ If we wanna us objects to display different texture, color, opacity,etc, we will
 First, create a folder in the Project view under the Assets folder and name it "Materials"
 Then create a material by right clicking in the project view.
 After setting the materials for your target object, drag the material file on to your target object in the scene window or its title shown in the Hierarchy on the left.
-![AddMaterials.png](AddMaterials.png)
+![AddMaterials.png](img/AddMaterials.png)

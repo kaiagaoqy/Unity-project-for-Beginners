@@ -41,7 +41,7 @@ The primitive plane is a single sided object, which means if you set y to a nega
 
 Now. let's set x,z=2, y =1
 
-![[img/Pasted image 20230218001518.png]]
+![[AddPlayers.png]]
 
 In the same way, let's create a sphere object then name it as Player.
 
@@ -51,3 +51,9 @@ All the primitive objects, like a cube, sphere, etc have a standard size, like o
 
 Let's set the coordinate of the sphere as $(0,0.5,0)$
 
+## 4. Add materials
+If we wanna us objects to display different texture, color, opacity,etc, we will need some material files.
+First, create a folder in the Project view under the Assets folder and name it "Materials"
+Then create a material by right clicking in the project view.
+After setting the materials for your target object, drag the material file on to your target object in the scene window or its title shown in the Hierarchy on the left.
+![[AddMaterials.png]]

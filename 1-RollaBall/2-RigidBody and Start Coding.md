@@ -32,4 +32,54 @@ Important: The following steps are not shown in the video.
 5. In the Project window, locate this new InputActions asset in the folder you just created.
 
 6. Either drag the InputActions asset from the Project window to the Actions property of the Player Input component on the Player GameObject, or use the circle icon for the Actions property to select the InputActions asset. **(No longer need for version 2021.3.18f)**
+## 3. C/# Start!! Let the sphere move!
+To create a C/# script for the sphere, we can add a compent called "New Script". Let's name it as "PlayerController"
+The script will always be created at the top level folder of our projects. 
+So to let our documents organized and tidy, we will create a new "Scripts" folder and move the script into it.
 
+As you can see in the screeshot below, we can move the sphere using WASD and Up/Down/Left/Right arrow
+
+![[InputActionsSetting.png]]
+
+Then let's work on the scripts
+- Function `Start` will be called once the project is run
+- Make sure the class name is the same as your file name
+- 
+``` c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerController : MonoBehaviour
+{
+    public float speed = 0; // You can set it manually in the Insepctor
+
+    private Rigidbody rb; // No need to let it visible to the inspector and make sure the data type is the same as it shown in the Inspector
+
+    private float movementX;
+    private float movementY;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();//Get properties defined in RigidBody
+    }
+
+    private void OnMove(InputValue movementValue) // Called by the EventSystem when a Move event occurs.
+    {
+        Vector2 movementVector = movementValue.Get<Vector2>();//Representation of 2D vectors and points.
+
+        movementX = movementVector.x;
+        movementY = movementVector.y;
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 movement = new Vector3(movementX, 0.0f, movementY);//Creates a new vector with given x, y, z components. !Tip: coordinates must be in Float!!!!
+
+        rb.AddForce(movement * speed); // Force is applied continuously along the direction of the force vector
+    }
+
+}
+```
